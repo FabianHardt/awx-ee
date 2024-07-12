@@ -4,7 +4,7 @@ USER root
 
 RUN yum update -y && \
     yum install -y epel-release && \
-    yum install -y nc && \
-    yum install -y iputils
+    yum install -y nc iputils && \
+    yum clean all
 
 USER 1000
